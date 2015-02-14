@@ -46,7 +46,7 @@ file to [rubygems.org](https://rubygems.org).
 To try the code, build and install the gem:
 
 ```bash
-bundle exec rake install
+$ bundle exec rake install
 masked_date 0.1.0 built to pkg/masked_date-0.1.0.gem.
 masked_date (0.1.0) installed.
 ```
@@ -54,16 +54,16 @@ masked_date (0.1.0) installed.
 Then use `create_date.rb` test script:
 
 ```bash
-bundle exec bin/create_date.rb 2014
+$ bundle exec bin/create_date.rb 2014
 2014
-bundle exec bin/create_date.rb 2014-3
+$ bundle exec bin/create_date.rb 2014-3
 2014-Mar
-bundle exec bin/create_date.rb 2014-3-15
+$ bundle exec bin/create_date.rb 2014-3-15
 2014-Mar-15
-bundle exec bin/create_date.rb -3-15
+$ bundle exec bin/create_date.rb -3-15
 Mar-15
-bundle exec bin/create_date.rb --1
+$ bundle exec bin/create_date.rb --1
 01
-bundle exec bin/create_date.rb --
+$ bundle exec bin/create_date.rb --
 
 ```
