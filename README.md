@@ -48,7 +48,7 @@ tag for the version, push git commits and tags, and push the `.gem`
 file to [rubygems.org](https://rubygems.org).
 
 
-To test the code out build and install the gem:
+To try the code, build and install the gem:
 
 ```bash
 bundle exec rake install
@@ -56,7 +56,7 @@ masked_date 0.1.0 built to pkg/masked_date-0.1.0.gem.
 masked_date (0.1.0) installed.
 ```
 
-Then try out the `create_date.rb` test script:
+Then use `create_date.rb` test script:
 
 ```bash
 bundle exec bin/create_date.rb 2014
