@@ -11,6 +11,8 @@ module MaskedDate
     DAY_FORMAT   = 'd'
     FIELD_SEP    = '-'
 
+    # TODO: change to #initialize(date,mask); move current to
+    # helper/factory method
     def initialize ymd={ y: nil, m: nil, d: nil, msk: nil }
       @date = ::Date.new (ymd[:y] || 0), (ymd[:m] || 1), (ymd[:d] || 1)
       @mask = ymd[:msk]
