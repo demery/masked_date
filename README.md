@@ -20,6 +20,13 @@ date.to_s                       # => 2012
 
 date = MaskedDate::Date.new m: 3, d: 15
 date.to_s                       # => Mar-15
+
+# or use  :msk to override the default behavior
+date = MaskedDate::Date.new y: 2015, m: 2, d: 14, msk: 1
+date.to_s                       # => 2015
+
+date = MaskedDate::Date.new y: 2015, m: 2, d: 14, msk: 3
+date.to_s                       # => 2015-02
 ```
 
 
