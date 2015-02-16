@@ -28,13 +28,13 @@ module MaskedDate
     #
     # === Examples
     #
-    # MaskedDate::Date.new y: 1971, m: 3, d: 31 # => 1971-Mar-31
-    # MaskedDate::Date.new y: 1971, m: 3        # => 1971-Mar
-    # MaskedDate::Date.new y: 1971              # => 1971
-    # MaskedDate::Date.new m: 3, d: 31          # => Mar-31
+    #   MaskedDate::Date.new y: 1971, m: 3, d: 31 # => 1971-Mar-31
+    #   MaskedDate::Date.new y: 1971, m: 3        # => 1971-Mar
+    #   MaskedDate::Date.new y: 1971              # => 1971
+    #   MaskedDate::Date.new m: 3, d: 31          # => Mar-31
     #
-    # MaskedDate::Date.new { y: 1971, m: 3, d: 31 }, [ :year, :month ]
-    #                                           # => 1971-Mar
+    #   MaskedDate::Date.new { y: 1971, m: 3, d: 31 }, 3
+    #                                             # => 1971-Mar
     #
     def initialize ymd={ y: nil, m: nil, d: nil }, msk=nil
       @date = ::Date.new (ymd[:y] || 0), (ymd[:m] || 1), (ymd[:d] || 1)
